@@ -24,5 +24,5 @@ jobs:
         run: |
           docker run -e WAS_MODE=$WAS_MODE -e ACCESS_KEY=$ACCESS_KEY -e SECRET_KEY=$SECRET_KEY \
           -v ${{ github.workspace }}:/scanner tenable/was-scanner:latest \
-          -c /scanner/scan_config.conf
+          
 
